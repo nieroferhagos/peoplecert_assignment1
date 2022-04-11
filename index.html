@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeopleCer School - Home</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="d-flex flex-column min-vh-100">
+        <header class="jumbotron text-center">
+            <h1>PeopleCert School</h1>
+            <p>Welcome!</p>
+        </header>
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a href="#" class="navbar-brand">Navbar</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html active" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Courses</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./courses_add.html">Add</a>
+                            <a class="dropdown-item" href="./courses_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trainers</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./trainers_add.html">Add</a>
+                            <a class="dropdown-item" href="./trainers_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Students</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./students_add.html">Add</a>
+                            <a class="dropdown-item" href="./students_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Assignments</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./assignments_add.html">Add</a>
+                            <a class="dropdown-item" href="./assignments_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trainers per Course</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./trainers_per_course_add.html">Add</a>
+                            <a class="dropdown-item" href="./trainers_per_course_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"">Students per Course</a>
+                        <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./students_per_course_add.html">Add</a>
+                            <a class="dropdown-item" href="./students_per_course_edit.html">Edit</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Assignments per Course</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./assignement_per_course_add.html">Add</a>
+                    <a class="dropdown-item" href="assignement_per_course_edit.html">Edit</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Assignments per Student per Course</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="assignment_per_student_per_course_add.html">Add</a>
+                    <a class="dropdown-item" href="assignment_per_student_per_course_edit.html">Edit</a>
+                </div>
+            </li>
+            </ul>
+            </ul>
+    </div>
+    </nav>
+
+    <div id="indexCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#indexCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#indexCarousel" data-slide-to="1"></li>
+            <li data-target="#indexCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/nubelson-fernandes-Bv2FCJoh8XM-unsplash.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/safar-safarov-koOdUvfGr4c-unsplash.jpg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/thisisengineering-raeng-64YrPKiguAE-unsplash.jpg" alt="Fifth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#indexCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#indexCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <footer class="jumbotron text-center mt-auto">
+        <p>Copyright (c) 202 rNh Programming</p>
+    </footer>
+    </div>
+</body>
+
+</html>

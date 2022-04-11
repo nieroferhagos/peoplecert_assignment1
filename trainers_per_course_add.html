@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeopleCert School - Trainers Per Course - Add</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="d-flex flex-column min-vh-100">
+        <header class="jumbotron text-center">
+            <h1>PeopleCert School</h1>
+            <p>Trainers Per Course Form</p>
+        </header>
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a href="#" class="navbar-brand">Navbar</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Courses</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./courses_add.html">Add</a>
+                            <a class="dropdown-item" href="./courses_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trainers</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./trainers_add.html">Add</a>
+                            <a class="dropdown-item" href="./trainers_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Students</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./students_add.html">Add</a>
+                            <a class="dropdown-item" href="./students_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Assignments</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./assignments_add.html">Add</a>
+                            <a class="dropdown-item" href="./assignments_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trainers per Course</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./trainers_per_course_add.html active">Add</a>
+                            <a class="dropdown-item" href="./trainers_per_course_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"">Students per Course</a>
+                        <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./students_per_course_add.html">Add</a>
+                            <a class="dropdown-item" href="./students_per_course_edit.html">Edit</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Assignments per Course</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./assignement_per_course_add.html">Add</a>
+                    <a class="dropdown-item" href="assignement_per_course_edit.html">Edit</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Assignments per Student per Course</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="assignment_per_student_per_course_add.html">Add</a>
+                    <a class="dropdown-item" href="assignment_per_student_per_course_edit.html">Edit</a>
+                </div>
+            </li>
+            </ul>
+            </ul>
+    </div>
+    </nav>
+
+        <div class="row justify-content-lg-center">
+            <div class="col-lg-5 my-4">
+                <form action="" id="form">
+                    <div class="form-group">
+                        <label for="subject">Choose a Course</label>
+                        <select class="form-control" name="subject" id="subject">
+                            <option value="">...</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="java">Java</option>
+                            <option value="csharp">C#</option>
+                            <option value="sql">SQL</option>
+                        </select>
+                    </div>
+                    <div class="html-form">
+                        <div class="form-group">
+                            <label for="html-trainers">Choose a Trainer</label>
+                            <select class="form-control trainers" name="html-trainers" id="html-trainers">
+                                <option value="">...</option>
+                                <option value="trainer1">GRIGORIS LADAS</option>
+                                <option value="trainer2">VAGELLIS PAPPAS</option>
+                                <option value="trainer3">JENNY RAPTI</option>
+                                <option value="trainer4">PANTELIS LOGOTHETIS</option>
+                                <option value="trainer5">EFI GAVRIELATOU</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="css-form">
+                        <div class="form-group">
+                            <label for="css-trainers">Choose a Trainer</label>
+                            <select class="form-control trainers" name="css-trainers" id="css-trainers">
+                                <option value="">...</option>
+                                <option value="trainer1">IOANNIS MANTOUDIS</option>
+                                <option value="trainer2">GIORGOS PASPARAKIS</option>
+                                <option value="trainer3">DAPHNE AGGELAKI</option>
+                                <option value="trainer4">ROMAN NIEROFER HAGOS</option>
+                                <option value="trainer5">AGGELOS KOVALTSIS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="javascript-form">
+                        <div class="form-group">
+                            <label for="javascript-trainers">Choose a Trainer</label>
+                            <select class="form-control trainers" name="javascript-trainers" id="javascript-trainers">
+                                <option value="">...</option>
+                                <option value="trainer1">RADU MARINESCU</option>
+                                <option value="trainer2">VASO MANOU</option>
+                                <option value="trainer3">MICHALIS VLACHIOTIS</option>
+                                <option value="trainer4">ANDREAS BOURZOUKOS</option>
+                                <option value="trainer5">RAFAILA GALANOPOULOU</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="java-form">
+                        <div class="form-group">
+                            <label for="java-trainers">Choose a Trainer</label>
+                            <select class="form-control trainers" name="java-trainers" id="java-trainers">
+                                <option value="">...</option>
+                                <option value="trainer1">ANTONIS THODOS</option>
+                                <option value="trainer2">NERINA PYROVOLIKOU</option>
+                                <option value="trainer3">FANI TSANOUSA</option>
+                                <option value="trainer4">CHARALAMPOS VERAROS</option>
+                                <option value="trainer5">DIMITRIS SELTSAS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="csharp-form">
+                        <div class="form-group">
+                            <label for="csharp-trainers">Choose a Trainer</label>
+                            <select class="form-control trainers" name="csharp-trainers" id="csharp-trainers">
+                                <option value="">...</option>
+                                <option value="trainer1">ANTONIS KATSAKOS</option>
+                                <option value="trainer2">IOANNIS-PANAGIOTIS POIKILIDIS</option>
+                                <option value="trainer3">ANDREAS TSAROUCHAS</option>
+                                <option value="trainer4">GIORGOS AZAKAS</option>
+                                <option value="trainer5">STAVROS KOURKOULOS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sql-form">
+                        <div class="form-group">
+                            <label for="sql-trainers">Choose a Trainer</label>
+                            <select class="form-control trainers" name="sql-trainers" id="sql-trainers">
+                                <option value="">...</option>
+                                <option value="trainer1">GIORGOS SAGRIS</option>
+                                <option value="trainer2">DIMITRIS PAPADOGIANNAKIS</option>
+                                <option value="trainer3">ANASTASIOS POIRATZIDIS</option>
+                                <option value="trainer4">GIORGOS GOUMPERIS</option>
+                                <option value="trainer5">EUAGGELOS KOLOKOTRONIS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+            </div>
+        </div>
+        <footer class="jumbotron text-center mt-auto">
+            <p>Copyright (c) 202 rNh Programming</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+    <script src="./js/trainers_per_course_add.js"></script>
+</body>

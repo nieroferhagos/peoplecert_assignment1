@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeopleCert School - Students - Edit</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+        
+</head>
+
+<body>
+    <div id="container" class="d-flex flex-column min-vh-100">
+        <header class="jumbotron text-center">
+            <h1>PeopleCert School</h1>
+            <p>Studednts Form</p>
+        </header> 
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a href="#" class="navbar-brand">Navbar</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Courses</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./courses_add.html">Add</a>
+                            <a class="dropdown-item" href="./courses_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trainers</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./trainers_add.html">Add</a>
+                            <a class="dropdown-item" href="./trainers_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Students</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./students_add.html">Add</a>
+                            <a class="dropdown-item" href="./students_edit.html active">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Assignments</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./assignments_add.html">Add</a>
+                            <a class="dropdown-item" href="./assignments_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Trainers per Course</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./trainers_per_course_add.html">Add</a>
+                            <a class="dropdown-item" href="./trainers_per_course_edit.html">Edit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"">Students per Course</a>
+                        <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./students_per_course_add.html">Add</a>
+                            <a class="dropdown-item" href="./students_per_course_edit.html">Edit</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Assignments per Course</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./assignement_per_course_add.html">Add</a>
+                    <a class="dropdown-item" href="assignement_per_course_edit.html">Edit</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Assignments per Student per Course</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="assignment_per_student_per_course_add.html">Add</a>
+                    <a class="dropdown-item" href="assignment_per_student_per_course_edit.html">Edit</a>
+                </div>
+            </li>
+            </ul>
+            </ul>
+    </div>
+    </nav>
+
+        <div class="row justify-content-lg-center">
+
+            <div class="col-lg-5 my-4">
+                <p class="bg-primary"><strong>Please edit the form below:</strong></p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" value="ROMAN NIEROFER" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" value="HAGOS" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" class="form-control" id="e-mail" name="e-mail" value="roman_nierofer@yahoo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-of-birth">Date of Birth:</label>
+                        <input type="date" class="form-control" id="date-of-birth" name="date-of-birth"
+                            value="1989-04-11">
+                    </div>
+                    <div class="form-group">
+                        <label for="tuition-fees">Tuition Fees:</label>
+                        <input type="number" class="form-control" id="tuition-fees" name="tuition-fees" min="1"
+                            value="600" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                </form>
+            </div>
+
+        </div>
+        
+        <footer class="jumbotron text-center mt-auto">
+            <p>Copyright (c) 202 rNh Programming</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <script src="./js/students_edit.js"></script>
+</body>
+</html>
